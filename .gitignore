@@ -26,3 +26,5 @@ deployment/InstantNGP/Android_Demo/build-*
 deployment/InstantNGP/iOS_Demo/c_api
 
 xcuserdata
+
+venv
