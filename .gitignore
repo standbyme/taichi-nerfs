@@ -28,3 +28,4 @@ deployment/InstantNGP/iOS_Demo/c_api
 xcuserdata
 
 venv
+.idea
