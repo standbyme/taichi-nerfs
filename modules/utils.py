@@ -1,5 +1,4 @@
 import os
-import cv2
 import torch
 import numpy as np
 
@@ -219,13 +218,6 @@ def torch2ti_grad_vec(field: ti.template(), grad: ti.types.ndarray()):
         field.grad[i, j][0] = grad[i, j * 2]
         field.grad[i, j][1] = grad[i, j * 2 + 1]
 
-
-def depth2img(depth):
-    depth = (depth - depth.min()) / (depth.max() - depth.min())
-    depth_img = cv2.applyColorMap((depth * 255).astype(np.uint8),
-                                  cv2.COLORMAP_TURBO)
-
-    return depth_img
 
 def save_deployment_model(model, dataset, save_dir):
     padding = torch.zeros(13, 16)
