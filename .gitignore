@@ -5,7 +5,7 @@ Synthetic_NeRF/
 __pycache__
 vren*/
 ckpts/
-results/
+
 imgui.ini
 .DS_Store
 *.pyc
